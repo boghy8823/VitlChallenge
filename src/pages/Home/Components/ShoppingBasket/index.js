@@ -34,6 +34,7 @@ const ShoppingBasket = ({ closeModal, isModalOpen, products }) => {
       borderRadius="32px"
     >
       <Container>
+        <Typography color="lightDark" variant="h2" gutterBottom="xxl">Edit basket</Typography>
         {products &&
           products.map((product, index) => (
             <Wrapper key={index}>
