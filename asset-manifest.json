@@ -2,23 +2,23 @@
   "files": {
     "main.js": "/VitlChallenge/static/js/main.15832c74.chunk.js",
     "main.js.map": "/VitlChallenge/static/js/main.15832c74.chunk.js.map",
-    "runtime-main.js": "/VitlChallenge/static/js/runtime-main.0c4649e9.js",
-    "runtime-main.js.map": "/VitlChallenge/static/js/runtime-main.0c4649e9.js.map",
+    "runtime-main.js": "/VitlChallenge/static/js/runtime-main.588c7ae4.js",
+    "runtime-main.js.map": "/VitlChallenge/static/js/runtime-main.588c7ae4.js.map",
     "static/js/2.88968a75.chunk.js": "/VitlChallenge/static/js/2.88968a75.chunk.js",
     "static/js/2.88968a75.chunk.js.map": "/VitlChallenge/static/js/2.88968a75.chunk.js.map",
     "static/js/3.82580cbf.chunk.js": "/VitlChallenge/static/js/3.82580cbf.chunk.js",
     "static/js/3.82580cbf.chunk.js.map": "/VitlChallenge/static/js/3.82580cbf.chunk.js.map",
     "static/js/4.c5768b74.chunk.js": "/VitlChallenge/static/js/4.c5768b74.chunk.js",
     "static/js/4.c5768b74.chunk.js.map": "/VitlChallenge/static/js/4.c5768b74.chunk.js.map",
-    "static/js/5.09e7c1cf.chunk.js": "/VitlChallenge/static/js/5.09e7c1cf.chunk.js",
-    "static/js/5.09e7c1cf.chunk.js.map": "/VitlChallenge/static/js/5.09e7c1cf.chunk.js.map",
+    "static/js/5.4d4b3d58.chunk.js": "/VitlChallenge/static/js/5.4d4b3d58.chunk.js",
+    "static/js/5.4d4b3d58.chunk.js.map": "/VitlChallenge/static/js/5.4d4b3d58.chunk.js.map",
     "index.html": "/VitlChallenge/index.html",
     "static/js/2.88968a75.chunk.js.LICENSE.txt": "/VitlChallenge/static/js/2.88968a75.chunk.js.LICENSE.txt",
     "static/js/3.82580cbf.chunk.js.LICENSE.txt": "/VitlChallenge/static/js/3.82580cbf.chunk.js.LICENSE.txt",
     "static/media/product_image.8034b78d.png": "/VitlChallenge/static/media/product_image.8034b78d.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0c4649e9.js",
+    "static/js/runtime-main.588c7ae4.js",
     "static/js/3.82580cbf.chunk.js",
     "static/js/main.15832c74.chunk.js"
   ]
