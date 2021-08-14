@@ -7,5 +7,5 @@ export const getTotalNutrients = (basketItems, nutrient) => {
       }
     })
     .map((item) => item.amount)
-    .reduce((acc, curr) => acc + curr);
+    .reduce((acc, curr) => acc + curr, 0);
 };

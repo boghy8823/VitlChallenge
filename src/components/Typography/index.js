@@ -4,7 +4,7 @@ import { StyledTypography } from "./Typography.styled";
 
 export const variants = ["h1","h2", "body1", "body2", "button", "caption"];
 
-const Typography = ({ component, variant, gutterBottom, gutterTop, textAlign, color, uppercase, ...props }) => {
+const Typography = ({ component, variant, gutterBottom, gutterTop, fontWeight, textAlign, color, uppercase, ...props }) => {
   return (
     <StyledTypography
       as={component || "p"}
@@ -13,6 +13,7 @@ const Typography = ({ component, variant, gutterBottom, gutterTop, textAlign, co
       gutterBottom={gutterBottom}
       gutterTop={gutterTop}
       uppercase={uppercase}
+      fontWeight={fontWeight}
       color={color}
       {...props}
     />

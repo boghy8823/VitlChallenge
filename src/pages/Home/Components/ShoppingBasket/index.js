@@ -78,6 +78,7 @@ ShoppingBasket.defaultProps = {
   onSubmit: () => {},
   isModalOpen: false,
   inEditMode: false,
+  products: []
 };
 
 export default ShoppingBasket;

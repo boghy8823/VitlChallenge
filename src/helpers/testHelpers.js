@@ -4,7 +4,7 @@ import { mount as enzymeMount } from "enzyme";
 import { ThemeProvider } from "styled-components";
 import { createStore } from "redux";
 import { BrowserRouter as Router } from "react-router-dom";
-import reducers from "../store/PaymentMethods";
+import reducers from "../store/Main";
 import theme from "../styles/themes/default";
 
 const store = createStore(

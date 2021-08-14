@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { PageWrapper, Row, Header, TotalItems } from "./Home.styled";
+import { PageWrapper, Row, Header, TotalItems, Divider } from "./Home.styled";
 import Button from "../../components/Button";
 import { nutrientLimitsMap } from "../../constants/nutrientLimits";
+import LogoIcon from "../../components/Icons/Logo";
 import Typography from "../../components/Typography";
 import ShoppingBasket from "./Components/ShoppingBasket";
 import ShoppingItem from "../../components/ShoppingItem";
@@ -39,20 +40,21 @@ const Home = () => {
   const isNutrientLimitExceeded = (nutrients) => {
     const basketNutrients = basketItems.map((item) => item.nutrients);
 
-    if (basketNutrients.length >= 1){
+    if (basketNutrients.length >= 1) {
       return nutrients
-      .map((nutrient) => {
-        const nutrientInBasket = getTotalNutrients(basketNutrients, nutrient);
-        const nutrientLimit = nutrientLimitsMap.get(nutrient.id);
-        const totalNutrientVal = nutrientInBasket + nutrient.amount;
+        .map((nutrient) => {
+          const nutrientInBasket = getTotalNutrients(basketNutrients, nutrient);
+          const nutrientLimit = nutrientLimitsMap.get(nutrient.id);
+          const totalNutrientVal = nutrientInBasket + nutrient.amount;
 
-        if (totalNutrientVal > nutrientLimit)
-          return { name: nutrient.id, total: totalNutrientVal };
-      })
-      .filter((x) => x !== undefined)
-      .length > 0 ? true: false;
+          if (totalNutrientVal > nutrientLimit)
+            return { name: nutrient.id, total: totalNutrientVal };
+        })
+        .filter((x) => x !== undefined).length > 0
+        ? true
+        : false;
     }
-    return false
+    return false;
   };
   const handleAddToBasketClick = (product) => {
     const isLimitExceeded = isNutrientLimitExceeded(product.nutrients);
@@ -68,6 +70,7 @@ const Home = () => {
   return (
     <PageWrapper>
       <Header>
+        <LogoIcon />
         <Button
           width="310px"
           height="57px"
@@ -79,14 +82,16 @@ const Home = () => {
         </Button>
       </Header>
       <Row justify="center" align="center">
-        <Typography
-          variant="h2"
-          color="lightDark"
-          gutterBottom="xxxl"
-          gutterTop="xxxl"
-        >
-          Products
-        </Typography>
+          <Typography
+            variant="h1"
+            color="lightDark"
+            gutterBottom="l"
+            gutterTop="xxxxl"
+            fontWeight="700"
+          >
+            Products
+          </Typography>
+        <Divider />
       </Row>
       <Row direction="row" justify="center">
         {products &&

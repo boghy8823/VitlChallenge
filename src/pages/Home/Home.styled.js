@@ -5,14 +5,7 @@ export const PageWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
-`;
-
-export const CardsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background-color: ${({ theme }) => theme.colors.beige};
+  padding: 100px 40px;
 `;
 
 export const Row = styled.div`
@@ -29,11 +22,11 @@ export const Header = styled.div`
   width: 100%;
   height: 100px;
   top: 0;
-  padding: 0 30px 20px;
+  padding: 0 30px 20px 65px;
   display: flex;
   position: fixed;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content: space-between;
   overflow:hidden;
   background: ${({ theme }) => theme.colors.white};
   z-index: 2;
@@ -52,4 +45,19 @@ export const TotalItems = styled.div`
     line-height: 36px;
     color: white;
     overflow: hidden;
+`;
+
+export const Divider = styled.div`
+  width: 70px;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  background-color:  ${({ theme }) => theme.colors.yellow};
+`;
+
+export const HeadingContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 `;

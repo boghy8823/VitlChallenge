@@ -9,13 +9,6 @@ export const PageWrapper = styled.div`
   padding: 40px;
 `;
 
-export const CardsContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background-color: ${({ theme }) => theme.colors.beige};
-`;
-
 export const ButtonContainer = styled.div`
   margin-top: ${({ theme }) => theme.spacings.xxxxxl || "0px"};
 `;

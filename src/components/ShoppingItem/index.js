@@ -26,8 +26,9 @@ const ShoppingItem = ({
         width="300"
         height="300"
         name={name}
+        data-test="product-image"
       />
-      <Typography color="black" variant="body2">
+      <Typography color="black" variant="body2" data-test="item-name">
         {name}
       </Typography>
       <Divider />
