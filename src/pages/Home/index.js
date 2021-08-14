@@ -62,7 +62,7 @@ const Home = () => {
     if (!isLimitExceeded) {
       dispatch(addToBasket(product));
     } else {
-      // TODO: proper notification component for this error
+      // TODO: implement proper notification component for this scenario
       alert("Limits reached");
     }
   };

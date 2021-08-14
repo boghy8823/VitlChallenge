@@ -4,7 +4,7 @@ import Typography from "../../components/Typography";
 import Button from "../../components/Button";
 import ProductImage from "../../components/ProductImage";
 import product_image from "../../images/product_image.png";
-import { Wrapper, StyledCloseIcon, Field, Divider } from "./ShoppingItem.styled";
+import { Wrapper, StyledCloseIcon, Row, Divider } from "./ShoppingItem.styled";
 
 const ShoppingItem = ({
   name,
@@ -17,9 +17,9 @@ const ShoppingItem = ({
   return (
     <Wrapper>
       {editable && (
-        <Field direction="row" align="flex-end" justify="flex-end">
+        <Row direction="row" align="flex-end" justify="flex-end">
           <Button variant="clear" onClick={removeFromBasket}><StyledCloseIcon />AA</Button>
-        </Field>
+        </Row>
       )}
       <ProductImage
         source={product_image}

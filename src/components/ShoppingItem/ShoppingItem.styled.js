@@ -16,15 +16,6 @@ export const Container = styled.div`
 `;
 
 export const Row = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: ${({ direction }) => direction || "column"};
-  justify-content: ${({ justify }) => justify || "flex-start"};
-  align-items: flex-start;
-  z-index: 1;
-`;
-
-export const Field = styled.div`
   display: flex;
   width: 100%;
   flex-direction: ${({ direction }) => direction || "column"};
